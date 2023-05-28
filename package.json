@@ -12,7 +12,10 @@
     "build-and-deploy": "npm run build && npm run deploy"
   },
   "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
     "gh-pages": "^5.0.0",
+    "prettier": "2.8.8",
     "sass": "^1.62.1",
     "vite": "^4.3.2"
   }

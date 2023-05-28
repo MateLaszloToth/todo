@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Todos</title>
-</head>
-<body>
-<div id="app">
-  <h1>Todos</h1>
-  <aside>
-    <button type="button" id="new-button">New Project</button>
-  </aside>
-  <dialog id="project-dialog">
-    <form id="project" action="" method="post">
-      <ul>
-        <li>
-          <label for="dialog-project-title">Title:</label>
-          <input type="text" id="dialog-project-title" required>
-        </li>
-        <li>
-          <label for="dialog-project-description">Description:</label>
-          <input type="text" id="dialog-project-description" required>
-        </li>
-        <li>
-          <label for="dialog-project-icon-url">Banner URL:</label>
-          <input type="url" id="dialog-project-icon-url" required>
-        </li>
-        <li>
-          <label for="dialog-project-due-date">Due date:</label>
-          <input type="date" id="dialog-project-due-date" required>
-        </li>
-        <li>
-          <fieldset>
-            <legend>Priority</legend>
-            <label for="dialog-project-high-priority">High</label>
-            <input type="radio" id="dialog-project-high-priority" name="priority" value="1" required>
-            <label for="dialog-project-medium-priority">Medium</label>
-            <input type="radio" id="dialog-project-medium-priority" name="priority" value="2" required>
-            <label for="dialog-project-low-priority">Low</label>
-            <input type="radio" id="dialog-project-low-priority" name="priority" value="3" checked required>
-          </fieldset>
-        </li>
-      </ul>
-      <button id="project-dialog-cancel">Cancel</button>
-      <button id="project-dialog-save">Save</button>
-    </form>
-  </dialog>
-  <dialog id="task-dialog">
-    <form id="task" action="" method="post">
-      <ul>
-        <li>
-          <label for="dialog-task-title">Title:</label>
-          <input type="text" id="dialog-task-title" required>
-        </li>
-        <li>
-          <label for="dialog-task-description">Description:</label>
-          <input type="text" id="dialog-task-description" required>
-        </li>
-      </ul>
-      <button id="task-dialog-cancel">Cancel</button>
-      <button type="submit" id="task-dialog-save">Save</button>
-    </form>
-  </dialog>
-  <main></main>
-</div>
-<script type="module" src="/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Todos</h1>
+      <aside>
+        <button type="button" id="new-button">New Project</button>
+      </aside>
+      <dialog id="project-dialog">
+        <form id="project" action="" method="post">
+          <ul>
+            <li>
+              <label for="dialog-project-title">Title:</label>
+              <input type="text" id="dialog-project-title" required />
+            </li>
+            <li>
+              <label for="dialog-project-description">Description:</label>
+              <input type="text" id="dialog-project-description" required />
+            </li>
+            <li>
+              <label for="dialog-project-icon-url">Banner URL:</label>
+              <input type="url" id="dialog-project-icon-url" required />
+            </li>
+            <li>
+              <label for="dialog-project-due-date">Due date:</label>
+              <input type="date" id="dialog-project-due-date" required />
+            </li>
+            <li>
+              <fieldset>
+                <legend>Priority</legend>
+                <label for="dialog-project-high-priority">High</label>
+                <input
+                  type="radio"
+                  id="dialog-project-high-priority"
+                  name="priority"
+                  value="1"
+                  required
+                />
+                <label for="dialog-project-medium-priority">Medium</label>
+                <input
+                  type="radio"
+                  id="dialog-project-medium-priority"
+                  name="priority"
+                  value="2"
+                  required
+                />
+                <label for="dialog-project-low-priority">Low</label>
+                <input
+                  type="radio"
+                  id="dialog-project-low-priority"
+                  name="priority"
+                  value="3"
+                  checked
+                  required
+                />
+              </fieldset>
+            </li>
+          </ul>
+          <button id="project-dialog-cancel">Cancel</button>
+          <button id="project-dialog-save">Save</button>
+        </form>
+      </dialog>
+      <dialog id="task-dialog">
+        <form id="task" action="" method="post">
+          <ul>
+            <li>
+              <label for="dialog-task-title">Title:</label>
+              <input type="text" id="dialog-task-title" required />
+            </li>
+            <li>
+              <label for="dialog-task-description">Description:</label>
+              <input type="text" id="dialog-task-description" required />
+            </li>
+          </ul>
+          <button id="task-dialog-cancel">Cancel</button>
+          <button type="submit" id="task-dialog-save">Save</button>
+        </form>
+      </dialog>
+      <main></main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

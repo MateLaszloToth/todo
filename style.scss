@@ -14,7 +14,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -33,8 +34,8 @@ body {
     grid-template-columns: 1fr 7fr;
     grid-template-rows: 1fr 7fr;
     grid-template-areas:
-           "title title"
-           "sidebar main";
+      "title title"
+      "sidebar main";
 
     & > h1 {
       grid-area: title;
@@ -98,7 +99,6 @@ body {
             margin-top: auto;
             align-self: end;
           }
-        ;
         }
 
         & > button.delete-project {
@@ -124,7 +124,6 @@ body {
         }
 
         & > ul {
-
           & > li.task {
             margin-bottom: 1rem;
             display: flex;
@@ -146,7 +145,7 @@ body {
                 }
 
                 p {
-                  text-decoration: line-through
+                  text-decoration: line-through;
                 }
               }
             }
@@ -180,5 +179,4 @@ body {
       }
     }
   }
-
 }
